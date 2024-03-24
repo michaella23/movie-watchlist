@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Watchlist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/ad15ce8c53.js" crossorigin="anonymous"></script>
+</head>
+<body class="flex col">
+    <header class="header-el flex">
+        <h1>Find your film</h1>
+        <a href="watchlist.html">My watchlist</a>
+    </header>
+    <div class="flex search-el">
+        <label for="search-bar" class="visually-hidden">Search bar</label>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="search-bar" name="search" class="search-bar" placeholder="What movie are you looking for?" />
+        <button id="search-btn" class="search-btn" onclick="searchDatabase()">Search</button>
+    </div>
+    <main id="main-el" class="flex col initial">
+        <div class="flex col initial-display">
+            <img src="images/film-roll.png" alt="film roll icon" class="film-roll-icon" />
+            <h2>Start exploring</h2>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
