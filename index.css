@@ -78,13 +78,13 @@ a:focus {
 
 .search-bar:hover,
 .search-bar:focus {
-    background-color: rgba(235, 250, 122, 0.98);
+    background-color: rgba(222, 242, 249, 0.98);
     outline-color: transparent;
 }
 
 .search-btn:hover,
 .search-btn:focus {
-    background-color: rgba(187, 250, 124, 0.9);    
+     background-color:  rgba(239, 253, 225, 0.98);    
     outline-color: transparent;  
 }
 
