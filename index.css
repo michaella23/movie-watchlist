@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box    
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+img {
+    max-width: 100%;
+    width: 200px;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+}
+
+.flex {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.col {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-el {
+    background-color: black;
+    background-image: url('images/header-bg.png');
+    color: white;
+    width: 100vw;
+    max-width: 800px;
+    padding: 3em;
+    justify-content: space-around;
+}
+
+a {
+    color: inherit;
+    padding: .4em;
+}
+
+a:hover,
+a:focus {
+    outline-color: transparent;
+    border: 1px solid goldenrod;
+}
+
+.search-el {
+    width: 450px;
+    gap: 0;
+    margin-top: -2em;
+}
+
+.search-bar {
+    width: 70%;
+    margin: 0;
+    padding: .5em 1em .5em .4em;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.search-bar:hover,
+.search-bar:focus {
+    background-color: rgba(235, 250, 122, 0.98);
+    outline-color: transparent;
+}
+
+.search-btn:hover,
+.search-btn:focus {
+    background-color: rgba(187, 250, 124, 0.9);    
+    outline-color: transparent;  
+}
+
+.search-btn {
+    width: 30%;
+    padding: .5em 1em;
+    font-family: inherit;
+    border: none;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.fa-magnifying-glass {
+    background-color: white;
+    color: gray;
+    padding: 0.55em 0.25em 0.55em 0.55em;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+main {
+    max-width: 800px; 
+    justify-content: center;
+    align-items: center;
+}
+
+.initial {
+    height: 60vh;
+    color: #DFDDDD;
+}
+
+.initial-display {
+    margin: 0 auto;
+    gap: 0;
+}
+
+.film-roll-icon {
+    width: 100px;
+}
+
+.initial-display h2 {
+    margin-top: 1rem;
+}
+
+.result-item {
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2em;
+    padding: 1em;
+    border-bottom: 1px solid grey;
+}
+
+
+.fa-star {
+    color: goldenrod;
+}
+
+.rating-el,
+.watchlist-add,
+.watchlist-rmv {
+    gap: 0.25rem;
+}
+
+.watchlist-add-btn,
+.watchlist-rmv-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 100%;
+
+}
+
+.watchlist-add-btn:hover,
+.watchlist-add-btn:focus,
+.watchlist-rmv-btn:hover,
+.watchlist-rmv-btn:focus {
+    outline-color: transparent;
+}
