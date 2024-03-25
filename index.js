@@ -6,6 +6,9 @@ const watchlistEl = document.getElementById("watchlist")
 
 let watchlist = JSON.parse(localStorage.getItem("movies"))
 
+const defaultImg = "images/film-roll.png"
+const defaultAltdesc = "No image available"
+
 function searchDatabase() {
     if (searchBarEl.value) {
         mainEl.classList.remove("initial")
@@ -17,10 +20,11 @@ function searchDatabase() {
                 fetch(`https://www.omdbapi.com/?apikey=90750739&i=${item.imdbID}`)
                     .then(res => res.json())
                     .then(item => {
+                        console.log(item)
                         const {Poster, Title, Ratings, Runtime, Genre, Plot, imdbID} = item
                         movieDetails +=
                         `<div class="result-item flex">
-                            <img src="${Poster}"/>
+                            <img src="${Poster === 'N/A' ? defaultImg : Poster}" alt="${Poster === 'N/A' ? defaultAltdesc : 'Poster for ' + Title}" class="poster-img" />
                             <div class="details">
                                 <div class="flex title-el">
                                     <h2>${Title}</h2>

@@ -11,8 +11,6 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-
-
 img {
     max-width: 100%;
     width: 200px;
@@ -136,6 +134,8 @@ main {
 }
 
 .result-item {
+    /* border: 1px solid hotpink; */
+    width: 100%;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 2em;
@@ -143,6 +143,9 @@ main {
     border-bottom: 1px solid grey;
 }
 
+.poster-img {
+    /* width: 100px; */
+}
 
 .fa-star {
     color: goldenrod;
